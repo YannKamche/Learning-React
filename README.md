@@ -1,1 +1,1 @@
-All the concepts I learned from this book about React
+All the concepts I learned from the book "Learning React: Functional Web Developement with React and Redux by Alex Banks and Eve Porcello"
