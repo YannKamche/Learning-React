@@ -1,1 +1,1 @@
-All the concepts I learned from the book "Learning React: Functional Web Developement with React and Redux by Alex Banks and Eve Porcello"
+Starting my journey in React and exploring deeply crucial concepts about it from beginner to advanced. All the concepts I learned from the book "Learning React: Functional Web Developement with React and Redux by Alex Banks and Eve Porcello" and exploring concepts from 
