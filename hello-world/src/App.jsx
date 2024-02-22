@@ -6,9 +6,9 @@ import Hello from './components/Hello'
 const App = () => {
   return (
     <div className='w-screen h-screen flex flex-col justify-center items-center bg-slate-300 gap-3'>
-      <Greet name="Bruce">
+      <Welcome name="Bruce">
         <p className='text-2xl font-semibold tracking-tighter'>I am super Hero coming to save you</p>
-      </Greet>
+      </Welcome>
     </div>
   )
 }
