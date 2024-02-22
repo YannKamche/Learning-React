@@ -1,5 +1,6 @@
 import React from 'react'
 import Greet from './components/Greet'
+import Welcome from './components/Welcome'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
 
       {/* My first Class components */}
       <Greet />
+      <Welcome />
     </div>
   )
 }
