@@ -5,6 +5,7 @@ import Hello from './components/Hello'
 import Count from './components/Count'
 import ClassClick from './components/ClassClick'
 import CallMe from './components/CallMe'
+import EventBinding from './components/EventBinding'
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       {/* <Count /> */}
       {/* <ClassClick /> */}
 
-      <CallMe name="Bruce" message="Welcome to this new World!"/>
+      {/* <CallMe name="Bruce" message="Welcome to this new World!"/> */}
+      <EventBinding />
     </div>
   )
 }
