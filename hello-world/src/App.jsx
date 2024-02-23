@@ -3,6 +3,7 @@ import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Count from './components/Count'
+import ClassClick from './components/ClassClick'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
         <p className='text-2xl font-semibold tracking-tighter'>I am super Hero coming to save you</p>
       </Welcome> */}
 
-      <Count />
+      {/* <Count /> */}
+      <ClassClick />
     </div>
   )
 }
