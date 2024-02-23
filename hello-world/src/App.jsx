@@ -4,6 +4,7 @@ import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Count from './components/Count'
 import ClassClick from './components/ClassClick'
+import CallMe from './components/CallMe'
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
       </Welcome> */}
 
       {/* <Count /> */}
-      <ClassClick />
+      {/* <ClassClick /> */}
+
+      <CallMe name="Bruce" message="Welcome to this new World!"/>
     </div>
   )
 }
