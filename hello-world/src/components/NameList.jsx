@@ -3,7 +3,7 @@ import Person from './Person';
 
 const NameList = () => {
 
-    const countries = ["Cameroon", "America", "Nigeria", "South Africa"];
+    const countries = ["Cameroon", "America", "Nigeria", "South Africa", "Cameroon"];
     const musicGenres = ["Afrobeat", "AmaPiano", "Seben", "Jazz", "Pop", "Bikutsi"]
 
     const persons = [
@@ -32,16 +32,16 @@ const NameList = () => {
         <div key={music} className='bg-black text-white p-3 rounded-md shadow-xl'>{music}</div>
       ))}
       {
-        countries.map(country => (
-            <div key={country} className='bg-black text-white p-3 rounded-md shadow-xl'>{country}</div>
+        countries.map((country, index) => (
+            <div key={index} className='bg-black text-white p-3 rounded-md shadow-xl'>{country}</div>
         ))
       }
-      {
+      {/* {
         persons.map(person => (
         <div className='bg-black text-white p-3 rounded-md shadow-2xl'>
             <Person key={person.id} person={person}/>
         </div>))
-      }
+      } */}
     </div>
   )
 }
