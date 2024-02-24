@@ -39,7 +39,7 @@ const NameList = () => {
       {
         persons.map(person => (
         <div className='bg-black text-white p-3 rounded-md shadow-2xl'>
-            <Person person={person}/>
+            <Person key={person.id} person={person}/>
         </div>))
       }
     </div>
