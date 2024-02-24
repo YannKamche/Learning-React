@@ -7,6 +7,7 @@ import ClassClick from './components/ClassClick'
 import CallMe from './components/CallMe'
 import EventBinding from './components/EventBinding'
 import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
       {/* <CallMe name="Bruce" message="Welcome to this new World!"/> */}
       {/* <EventBinding /> */}
 
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      <UserGreeting />
     </div>
   )
 }
