@@ -9,6 +9,8 @@ import EventBinding from './components/EventBinding'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
+import StyleSheet from './components/StyleSheet'
+import Inline from './components/Inline'
 
 const App = () => {
   return (
@@ -26,7 +28,9 @@ const App = () => {
       {/* <ParentComponent /> */}
       {/* <UserGreeting /> */}
 
-      <NameList />
+      {/* <NameList /> */}
+      <StyleSheet primary={true}/>
+      <Inline />
     </div>
   )
 }
