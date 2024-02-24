@@ -8,6 +8,7 @@ import CallMe from './components/CallMe'
 import EventBinding from './components/EventBinding'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
+import NameList from './components/NameList'
 
 const App = () => {
   return (
@@ -23,7 +24,9 @@ const App = () => {
       {/* <EventBinding /> */}
 
       {/* <ParentComponent /> */}
-      <UserGreeting />
+      {/* <UserGreeting /> */}
+
+      <NameList />
     </div>
   )
 }
