@@ -11,6 +11,7 @@ import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
 import StyleSheet from './components/StyleSheet'
 import Inline from './components/Inline'
+import FormHandling from './components/FormHandling'
 
 const App = () => {
   return (
@@ -29,8 +30,10 @@ const App = () => {
       {/* <UserGreeting /> */}
 
       {/* <NameList /> */}
-      <StyleSheet primary={true}/>
-      <Inline />
+      {/* <StyleSheet primary={true}/>
+      <Inline /> */}
+
+      <FormHandling />
     </div>
   )
 }
