@@ -12,6 +12,7 @@ import NameList from './components/NameList'
 import StyleSheet from './components/StyleSheet'
 import Inline from './components/Inline'
 import FormHandling from './components/FormHandling'
+import ParentComp from './components/ParentComp'
 
 const App = () => {
   return (
@@ -33,7 +34,8 @@ const App = () => {
       {/* <StyleSheet primary={true}/>
       <Inline /> */}
 
-      <FormHandling />
+      {/* <FormHandling /> */}
+      <ParentComp />
     </div>
   )
 }
