@@ -13,6 +13,8 @@ import StyleSheet from './components/StyleSheet'
 import Inline from './components/Inline'
 import FormHandling from './components/FormHandling'
 import ParentComp from './components/ParentComp'
+import ModalChild from './components/ModalChild'
+import Modal from './components/Modal'
 
 const App = () => {
   return (
@@ -35,7 +37,11 @@ const App = () => {
       <Inline /> */}
 
       {/* <FormHandling /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
+
+      <Modal>
+        <ModalChild />
+      </Modal>
     </div>
   )
 }
