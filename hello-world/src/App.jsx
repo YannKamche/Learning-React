@@ -50,9 +50,9 @@ const App = () => {
         {(count, incrementCount) => <Counter count={count} incrementCount={incrementCount}/>}
       </Render> */}
 
-      <UserProvider value="I am passed down the tree">
+      {/* <UserProvider value="I am passed down the tree"> */}
         <ComponentA />
-      </UserProvider>
+      {/* </UserProvider> */}
     </div>
   )
 }
