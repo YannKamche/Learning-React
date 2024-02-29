@@ -15,6 +15,8 @@ import FormHandling from './components/FormHandling'
 import ParentComp from './components/ParentComp'
 import ModalChild from './components/ModalChild'
 import Modal from './components/Modal'
+import Render from './components/Render'
+import Counter from './components/Counter'
 
 const App = () => {
   return (
@@ -39,9 +41,12 @@ const App = () => {
       {/* <FormHandling /> */}
       {/* <ParentComp /> */}
 
-      <Modal>
+      {/* <Modal>
         <ModalChild />
-      </Modal>
+      </Modal> */}
+      <Render>
+        {(count, incrementCount) => <Counter count={count} incrementCount={incrementCount}/>}
+      </Render>
     </div>
   )
 }
