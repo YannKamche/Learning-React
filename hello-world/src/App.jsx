@@ -17,6 +17,8 @@ import ModalChild from './components/ModalChild'
 import Modal from './components/Modal'
 import Render from './components/Render'
 import Counter from './components/Counter'
+import ComponentA from './components/ComponentA'
+import { UserProvider } from './components/Context'
 
 const App = () => {
   return (
@@ -44,9 +46,13 @@ const App = () => {
       {/* <Modal>
         <ModalChild />
       </Modal> */}
-      <Render>
+      {/* <Render>
         {(count, incrementCount) => <Counter count={count} incrementCount={incrementCount}/>}
-      </Render>
+      </Render> */}
+
+      <UserProvider value="I am passed down the tree">
+        <ComponentA />
+      </UserProvider>
     </div>
   )
 }
