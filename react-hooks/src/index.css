@@ -5,3 +5,6 @@
 .btn {
     @apply bg-black p-3 text-white rounded-xl shadow-lg
 }
+.input {
+    @apply p-3 rounded-md text-blue-400
+}
