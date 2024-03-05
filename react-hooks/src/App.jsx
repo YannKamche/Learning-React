@@ -4,6 +4,7 @@ import Object from './components/Object'
 import Array from './components/Array'
 import Effect from './components/Effect'
 import EffectOnce from './components/EffectOnce'
+import ButtonHook from './components/ButtonHook'
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       {/* <Object /> */}
       {/* <Array /> */}
       {/* <Effect /> */}
-      <EffectOnce />
+      {/* <EffectOnce /> */}
+      <ButtonHook />
     </div>
   )
 }

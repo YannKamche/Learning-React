@@ -7,12 +7,17 @@ const EffectOnce = () => {
     const logMousePosition = e => {
         console.log('Mouse event')
         setX(e.clientX)
-        setY(e.clientY)
+        setY(e.clientY) 
     }
 
     useEffect(() => {
         console.log('useEffect called');
         window.addEventListener('mousemove', logMousePosition)
+        
+        return () => {
+          console.log('Component Unmounted')
+          window.removeEventListener('mousedown', logMousePosition)
+        }
     }, [])
   return (
     <div>
