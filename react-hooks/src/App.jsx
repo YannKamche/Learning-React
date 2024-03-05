@@ -3,6 +3,7 @@ import Counter from './components/Counter'
 import Object from './components/Object'
 import Array from './components/Array'
 import Effect from './components/Effect'
+import EffectOnce from './components/EffectOnce'
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       {/* <Counter /> */}
       {/* <Object /> */}
       {/* <Array /> */}
-      <Effect />
+      {/* <Effect /> */}
+      <EffectOnce />
     </div>
   )
 }
