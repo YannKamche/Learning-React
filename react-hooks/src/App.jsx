@@ -5,6 +5,7 @@ import Array from './components/Array'
 import Effect from './components/Effect'
 import EffectOnce from './components/EffectOnce'
 import ButtonHook from './components/ButtonHook'
+import IntervalCounter from './components/IntervalCounter'
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       {/* <Array /> */}
       {/* <Effect /> */}
       {/* <EffectOnce /> */}
-      <ButtonHook />
+      {/* <ButtonHook /> */}
+      <IntervalCounter />
     </div>
   )
 }
