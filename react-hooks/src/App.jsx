@@ -6,6 +6,7 @@ import Effect from './components/Effect'
 import EffectOnce from './components/EffectOnce'
 import ButtonHook from './components/ButtonHook'
 import IntervalCounter from './components/IntervalCounter'
+import DataFetching from './components/DataFetching'
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       {/* <Effect /> */}
       {/* <EffectOnce /> */}
       {/* <ButtonHook /> */}
-      <IntervalCounter />
+      {/* <IntervalCounter /> */}
+      <DataFetching />
     </div>
   )
 }
