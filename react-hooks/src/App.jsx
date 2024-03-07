@@ -7,6 +7,10 @@ import EffectOnce from './components/EffectOnce'
 import ButtonHook from './components/ButtonHook'
 import IntervalCounter from './components/IntervalCounter'
 import DataFetching from './components/DataFetching'
+import ComponentA from './components/ComponentA'
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 const App = () => {
   return (
@@ -18,7 +22,13 @@ const App = () => {
       {/* <EffectOnce /> */}
       {/* <ButtonHook /> */}
       {/* <IntervalCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <UserContext.Provider value="Hello World">
+        <ChannelContext.Provider value="How are you?">
+          <ComponentA />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+      
     </div>
   )
 }
