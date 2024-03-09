@@ -8,6 +8,7 @@ import ButtonHook from './components/ButtonHook'
 import IntervalCounter from './components/IntervalCounter'
 import DataFetching from './components/DataFetching'
 import ComponentA from './components/ComponentA'
+import CounterReducer from './components/CounterReducer'
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -23,12 +24,13 @@ const App = () => {
       {/* <ButtonHook /> */}
       {/* <IntervalCounter /> */}
       {/* <DataFetching /> */}
-      <UserContext.Provider value="Hello World">
+      {/* <UserContext.Provider value="Hello World">
         <ChannelContext.Provider value="How are you?">
           <ComponentA />
         </ChannelContext.Provider>
       </UserContext.Provider>
-      
+       */}
+      <CounterReducer />
     </div>
   )
 }
