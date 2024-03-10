@@ -1,38 +1,36 @@
-import React from 'react'
-import Counter from './components/Counter'
-import Object from './components/Object'
-import Array from './components/Array'
-import Effect from './components/Effect'
-import EffectOnce from './components/EffectOnce'
-import ButtonHook from './components/ButtonHook'
-import IntervalCounter from './components/IntervalCounter'
-import DataFetching from './components/DataFetching'
-import ComponentA from './components/ComponentA'
-import CounterReducer from './components/CounterReducer'
+import React, { useReducer } from 'react'
+import Student from './components/Student';
 
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+//initial state 
+const initialValue = {
+  name: [],
+  matricule: []
+}
+//reducer function
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'addName':
+      return { ...state, name: [...state.name, `${action.value}, `] }
+    case 'addMatricule':
+      return { ...state, matricule: [...state.matricule, `${action.value}, `] };
+  }
+}
+
+//context
+export const StudentContext = React.createContext();
 
 const App = () => {
-  return (
-   <div className='flex flex-col justify-center items-center bg-slate-300 gap-3 w-screen h-screen'>
-      {/* <Counter /> */}
-      {/* <Object /> */}
-      {/* <Array /> */}
-      {/* <Effect /> */}
-      {/* <EffectOnce /> */}
-      {/* <ButtonHook /> */}
-      {/* <IntervalCounter /> */}
-      {/* <DataFetching /> */}
-      {/* <UserContext.Provider value="Hello World">
-        <ChannelContext.Provider value="How are you?">
-          <ComponentA />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
-       */}
-      <CounterReducer />
-    </div>
-  )
+  const [state, dispatch] = useReducer(reducer, initialValue)
+
+   return (
+     <div className="flex flex-col justify-center items-center bg-slate-300 gap-3 w-screen h-screen">
+       <p>Name: { state.name}</p>
+       <p>Matricule: { state.matricule}</p>
+       <StudentContext.Provider value={{ user: state, userAction: dispatch }}>
+         <Student />
+       </StudentContext.Provider>
+     </div>
+   );
 }
 
 export default App
