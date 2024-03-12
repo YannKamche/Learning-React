@@ -1,5 +1,7 @@
 import React, { useReducer } from 'react'
 import Student from './components/Student';
+import UseReducerDataFetching from './components/DataFetchingTwo';
+import DataFetchingTwo from './components/DataFetchingTwo';
 
 //initial state 
 const initialValue = {
@@ -24,12 +26,14 @@ const App = () => {
 
    return (
      <div className="flex flex-col justify-center items-center bg-slate-300 gap-3 w-screen h-screen">
-       <p>Name: { state.name}</p>
+       {/* <p>Name: { state.name}</p>
        <p>Matricule: { state.matricule}</p>
        <StudentContext.Provider value={{ user: state, userAction: dispatch }}>
          <Student />
-       </StudentContext.Provider>
-     </div>
+       </StudentContext.Provider> */}
+       <DataFetchingTwo />
+      </div>
+    
    );
 }
 
